@@ -1,0 +1,777 @@
+/*
+* @Author: WHX
+* @Date:   2018-08-26 17:06:51
+* @Last Modified by:   WHX
+* @Last Modified time: 2018-09-06 22:22:09
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+body{
+	background: #212121;
+}
+
+/* 公共样式  小小屏 col-xs- <768px */
+/* 顶部开始 */
+nav{
+	width: 100%;
+	height: 100px;
+	background: #212121;
+}
+nav .con{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+nav .con .head{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav .con .head img{
+	display: block;
+}
+nav .con .list a{
+	height: 100%;
+	color: #fff;
+	font-size: 18px;
+	line-height: 100px;
+	margin-left: 15px;
+}
+nav .con .list a:hover{
+	color: red;
+	text-decoration: none;
+}
+nav .con .list a.list-text{
+	display: none;
+}
+nav .con .list i{
+	font-size: 48px;
+	color: #fff;
+}
+/* 顶部结束 */
+/* banner开始 */
+.banner{
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	/* height: 230px; */
+	display: block;
+}
+.banner .point{
+	width: 100px;
+	height: 25px;
+	/* background: #FFF; */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+}
+.banner ul li{
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+.banner ul .one{
+	background: red;
+}
+.banner ul li:hover{
+	background: red;
+}
+
+/* banner结束 */
+
+.slogn{
+	width: 100%;
+	height: 100%;
+	background: #212121;
+	margin: 0 auto;
+
+}
+.slogn:after{
+	width: 100%;
+	height: 2px;
+	background: #353535;
+	content: "";
+	display: block;
+}
+.slogn ul li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slogn ul li img{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* 潮流客片开始 */
+main{
+	background: #212121;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+main .title h5{
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+}
+main .title p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+
+main ul li img{
+	width: 100%;
+	display: block;	
+}
+/* 潮流客片结束 */
+
+/* 原创作品开始 */
+.works .title{
+	margin-top: 65px;
+}
+
+.works .title h5{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+	font-family: HELVETICANEUELTPRO-THEX, fzlantinghei-l-gbkregular, 微软雅黑;
+	font-weight: 500;
+
+}
+.works .title p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+}
+.works .title p:after{
+	width: 3.8%;
+	height: 2px;
+	background: red;
+	content: "";
+	display: block;
+	margin: 5px auto 14px;
+}
+.works ul{
+	margin-right: 0;
+	margin-left: 0;
+}
+.works ul li{
+	position: relative;
+	transition: bottom .5s;
+	margin-bottom: 15px;
+
+}
+.works ul li img{
+	width: 100%;
+	height: 100%;
+	display: block;	
+	
+}
+.works ul li .red{
+	width:calc(100% - 30px);
+	height: 55px;
+	background: red;
+	position: absolute;
+	left: 15px;
+	bottom: -55px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	display: none;
+	padding: 0 30px;
+	line-height: 55px;
+	
+}
+.works ul li:hover .red{
+	display: block;
+	bottom: 0;
+	color: #fff;
+}
+/* 原创作品结束 */
+.phone{
+	margin-top: 55px;
+}
+.phone img{
+	width: 102%;
+	display: block;
+	margin-left: -10px;
+}
+
+/* 旅拍基地开始 */
+.city1 .title{
+	margin-top: 65px;
+}
+
+.city1 .title h5{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+	font-family: HELVETICANEUELTPRO-THEX, fzlantinghei-l-gbkregular, 微软雅黑;
+	font-weight: 500;
+
+}
+.city1 .title p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+}
+.city1 .title p:after{
+	width: 3.8%;
+	height: 2px;
+	background: red;
+	content: "";
+	display: block;
+	margin: 5px auto 14px;
+}
+.city1 ul{
+	margin: 0px;
+}
+.city1 ul li{
+	position: relative;
+}
+.city1 ul li img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+.city1 ul li .pic1{
+	display: none;
+}
+.city1 ul li:hover .pic1{
+	width: 100%;
+	padding: 0 15px 10px;
+	height: 100%;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+}
+.city2{
+	display: none;
+}
+/* 旅拍基地结束 */
+
+/* 品牌中心开始 */
+.brand .title{
+	margin-top: 65px;
+}
+
+.brand .title h5{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+	font-family: HELVETICANEUELTPRO-THEX, fzlantinghei-l-gbkregular, 微软雅黑;
+	font-weight: 500;
+
+}
+.brand .title p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+}
+.brand .title p:after{
+	width: 3.8%;
+	height: 2px;
+	background: red;
+	content: "";
+	display: block;
+	margin: 5px auto 14px;
+}
+.brand ul{
+	margin-right: 0;
+	margin-left: 0;
+}
+.brand ul li{
+	position: relative;
+	/* padding: 0 50px; */
+	transition: bottom .5s;
+	margin-bottom: 15px;
+
+}
+.brand ul li img{
+	width: 100%;
+	height: 100%;
+	display: block;	
+	
+}
+.brand ul li i{
+	color: #808080;
+	font-size: 36px;
+	font-weight: 600;
+}
+.brand ul li:hover i{
+	color: #fff;
+}
+.brand ul li .red{
+	width:calc(100% - 30px);
+	height: 55px;
+	background: #414141;
+	position: absolute;
+	left: 15px;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #fff;
+	padding: 0 30px;
+	line-height: 55px;
+	
+}
+.brand ul li:hover .red{
+	background: red;
+	bottom: 0;
+	color: #fff;
+}
+/* 品牌中心结束 */
+
+/* 客户评价开始 */
+.customer .title{
+	margin-top: 65px;
+}
+
+.customer .title h5{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+	font-family: HELVETICANEUELTPRO-THEX, fzlantinghei-l-gbkregular, 微软雅黑;
+	font-weight: 500;
+
+}
+.customer .title p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	margin: 0 0 5px 0;
+}
+.customer .title p:after{
+	width: 3.8%;
+	height: 2px;
+	background: red;
+	content: "";
+	display: block;
+	margin: 5px auto 14px;
+}
+.customer ul li{
+	display: flex;
+	flex-direction: row;
+	padding-right: 35px;
+	padding-left: 5px;
+
+}
+.customer ul li .left{
+	color: #99997A;
+	font-size: 20px;
+	width: 30%;
+	border-bottom: 2px solid #303030;
+}
+.customer ul li .left h3{
+	line-height: 20px;
+	font-weight: normal;
+	color: #999999;
+	text-align: center;
+}
+.customer ul li:hover h3{
+	color: #fff;
+}
+.customer ul li .right{
+	border-bottom: 2px solid #303030;
+}
+.customer ul li .right h3{
+	font-size: 16px;
+	color: #ECECEC;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.customer ul li .right p{
+	font-size: 10px;
+	line-height: 15px;
+	margin-bottom: 15px;
+	color: #999999;
+	height: 30px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+}
+.news{
+	width: 100%;
+}
+.customer ul li:hover p{
+	color: #fff;
+}
+.hr_white {
+    width: 70%;
+    border-bottom: 1px solid #303030;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+/* 客户评价结束	 */
+.end img{
+	width: 100%;
+	height:100% ;
+	padding: 50px 0;
+}
+/* 底部开始 */
+footer{
+	width:100%;
+	height: 100%;
+	border-top: 1px solid #484848;
+	background: #101010;
+}
+.foot{
+	width:100%;
+	height: 100%;
+	
+}
+.foot h3{
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	border-top: 1px dashed #484848;
+	color: #999999;
+	margin: 0px;
+	padding: 15px 0;
+}
+.foot h3:nth-child(2){
+	margin: 0 15px;
+	font-size: 14px;
+}
+.foot h3:nth-child(3){
+	margin: 0 30px;
+	font-size: 12px;
+}
+.foot h3:nth-child(4){
+	margin: 0 50px;
+	font-size: 10px;
+}
+.foot h3:nth-child(5){
+	margin: 0 70px;
+	font-size: 10px;
+}
+.foot h3:nth-child(6){
+	margin: 0 70px;
+	font-size: 10px;
+}
+.foot p{
+	text-align: center;
+	font-size: 16px;
+	line-height: 20px;
+	color: #999999;
+	margin: 0px;
+	padding: 60px 0 20px;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+
+}
+/* 底部结束 */
+/* 最新作品开始
+.new {
+	background: #fff;
+}
+.new .title{
+	padding: 50px 0 15px 20px;
+	border-left: 4px solid #ffe228;
+	margin-left: 10px;
+}
+.new .title:before{
+	content: "";
+	display: block;
+	background: #ffe228;
+	width: 1px;
+	height: 30px;
+	margin-right: 5px;
+}
+.new .title h4{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0;
+	color: #000;
+}
+.new .title h5{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
+	color: #000;
+}
+.new .title p{
+	margin-bottom: 0;
+	font-size: 12px;
+	margin-top: -2px;
+}
+.new ul{
+	padding: 0 60px;
+}
+.new ul li{
+	padding-right: 0;
+	padding-bottom: 10px;
+}
+.new ul li img{
+	width: 100%;
+	height: 80%;
+	margin:  0 auto;
+}
+.new ul li h5{
+	margin: 0;
+	font-size: 10px;
+	margin-top: 5px;
+}
+.new ul li h5:after{
+	content: "";
+	width: 10px;
+	height: 1px;
+	background: #000;
+	display: block;
+	margin: 5px 0;
+}
+.new ul li p{
+	font-size: 12px;
+}
+最新作品结束 */
+
+
+
+/* 平板：小屏幕：col-sm-  >768px */
+@media screen and (min-width: 768px){
+	nav .con .list a.list-text{
+		display: inline;
+	}
+	nav .con .list a.list-icon{
+		display: none;
+	}
+	.benner img{
+		width: 100%;
+		/* height: 230px; */
+		display: block;
+	}
+	.banner ul li{
+		width: 12px;
+		height: 12px;
+	}
+	.works ul{
+	margin-right: -15px;
+	margin-left: -15px;
+	}
+	.works ul li{
+	position: relative;
+	padding: 0 7px;
+	transition: bottom .5s;
+	margin-bottom: 15px;
+
+	}
+	.works ul li .red{
+		width:calc(100% - 14px);
+	 	height: 55px;
+	 	background: red;
+	 	position: absolute;
+	 	left: 7px;
+		bottom: -55px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		display: none;
+		padding: 0 30px;
+		line-height: 55px;
+	}
+	.brand ul{
+	margin-right: -15px;
+	margin-left: -15px;
+	}
+	.brand ul li{
+	position: relative;
+	padding: 0 7px;
+	transition: bottom .5s;
+	margin-bottom: 15px;
+
+	}
+	.brand ul li .red{
+		width:calc(100% - 14px);
+	 	height: 55px;
+	 	background: #414141;
+	 	position: absolute;
+	 	left: 7px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 30px;
+		line-height: 55px;
+	}
+}
+
+/* 普通PC端：中屏幕：col-md- >992px */
+@media screen and (min-width:992px){
+	.container{
+		padding-right: 0px;
+		padding-left:  0px;
+	}
+	.banner img{
+		width: 100%;
+		/* height: 500px; */
+		display: block;
+	}
+	.banner ul li{
+		width: 13px;
+		height: 13px;
+	}
+	.city1{
+		display: none;
+	}
+	.city2 .title{
+		margin-top: 85px;
+	}
+	.city2{
+		display: block;
+	}
+	.city2 .title h5{
+		font-size: 24px;
+		color: #fff;
+		text-align: center;
+		margin: 0 0 5px 0;
+		font-family: HELVETICANEUELTPRO-THEX, fzlantinghei-l-gbkregular, 微软雅黑;
+		font-weight: 500;
+
+	}
+	.city2 .title p{
+		font-size: 10px;
+		color: #fff;
+		text-align: center;
+		margin: 0 0 5px 0;
+	}
+	.city2 .title p:after{
+		width: 3.8%;
+		height: 2px;
+		background: red;
+		content: "";
+		display: block;
+		margin: 5px auto 30px;
+	}
+	.city2 ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.city2 ul li{
+		position: relative;
+	}
+	.city2 ul li img{
+		width: 100%;
+		display: block;
+	}
+	.city2 ul li .pic1{
+		display: none;
+	}
+	.city2 ul li:hover .pic1{
+		display: block;
+		position: absolute;
+		bottom: 0px;
+	}
+	.foot h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0 270px;
+	}
+	.foot h3:nth-child(2){
+		margin: 0 210px;
+		font-size: 18px;
+	}
+	.foot h3:nth-child(3){
+		margin: 0 260px;
+		font-size: 16px;
+	}
+	.foot h3:nth-child(4){
+		margin: 0 290px;
+		font-size: 12px;
+	}
+	.foot h3:nth-child(5){
+		margin: 0 340px;
+		font-size: 12px;
+	}
+	.foot h3:nth-child(6){
+	margin: 0 340px;
+	font-size: 10px;
+	}
+	.foot p{
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	color: #999999;
+	margin: 0 120px;
+	padding: 60px 0 20px;
+	}
+
+}
+ 
+/* 大屏幕PC端：col-lg- >1200px */
+@media screen and (min-width:1200px){
+	.foot h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin: 0 270px;
+	}
+	.foot h3:nth-child(2){
+		margin: 0 270px;
+		font-size: 18px;
+	}
+	.foot h3:nth-child(3){
+		margin: 0 310px;
+		font-size: 14px;
+	}
+	.foot h3:nth-child(4){
+		margin: 0 370px;
+		font-size: 12px;
+	}
+	.foot h3:nth-child(5){
+		margin: 0 370px;
+		font-size: 12px;
+	}
+	.foot h3:nth-child(6){
+	margin: 0 370px;
+	font-size: 10px;
+	}
+	.foot p{
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	color: #999999;
+	margin: 0 120px;
+	padding: 60px 0 20px;
+	}
+
+}
+
+

@@ -1,0 +1,57 @@
+/*
+* @Author: WHX
+* @Date:   2018-09-02 20:21:05
+* @Last Modified by:   WHX
+* @Last Modified time: 2018-09-06 22:24:48
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+body{
+	background: #212121;
+}
+/* 公共样式  小小屏 col-xs- <768px */
+
+/* banner开始 */
+.banner img{
+	width: 100%;
+}
+/* banner结束 */
+
+/* 位置开始 */
+.location p{
+	color: #999999;
+	/* margin-left: 10px; */
+}
+.location a{
+	color: #999999;
+}
+.location a:hover{
+	color: red;
+	text-decoration: none;
+}
+/* 位置结束 */
+
+/* 平板：小屏幕：col-sm-  >768px */
+@media screen and (min-width: 768px){
+
+}
+
+/* 普通PC端：中屏幕：col-md- >992px */
+@media screen and (min-width:992px){
+
+}
+
+/* 大屏幕PC端：col-lg- >1200px */
+@media screen and (min-width:1200px){
+	
+}
