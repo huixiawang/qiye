@@ -20,6 +20,36 @@ body{
 	background: #212121;
 }
 /* 公共样式  小小屏 col-xs- <768px */
+/*下拉列表开始*/
+.ying{
+	overflow: hidden;
+}
+.nav-list{
+	width:100%;
+	height:500px;
+	background: #212121;
+	position:absolute;
+	top:100px;
+	left:0;
+	z-index: 999;
+	padding: 10px 30px;
+	display: none;
+}
+.nav-list ul a{
+	text-decoration: none;
+}
+.nav-list ul li{
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 44px;
+	border-bottom: 1px solid #282828;
+}
+.nav-list ul li:hover{
+	color:red;
+}
+/*下拉列表结束*/
+
 nav{
 	width: 100%;
 	/* height: 100px; */
@@ -141,6 +171,7 @@ main ul li .date i{
 	color: #c9c9c9;
     border: 1px solid #999999;
 	border-radius: 35px;
+	display: none;
 }
 main ul a:hover{
 	text-decoration: none;

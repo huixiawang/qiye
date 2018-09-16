@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_814186_ac0e0htkdn5.css">
 	<link rel="stylesheet" href="css/swiper-4.3.5.min.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_814186_kjge73fdl2s.css">
-	<script src="swiper-4.3.5.min.js"></script>
+	<script src="js/swiper-4.3.5.min.js"></script>
+	<script src="js/jquery%203.3.1.js"></script>
 	<title>婚纱旅拍</title>
 	<link rel="stylesheet" href="css/home page.css">
 </head>
@@ -21,7 +22,7 @@
 					<img src="img/logo3.png" alt="">
 				</div>
 				<div class="list">
-					<a href="" class="list-icon"><i class="iconfont icon-systemmenu"></i></a>
+					<a href="javascript:;" class="list-icon"><i class="iconfont icon-systemmenu"></i></a>
 					<a href="home page.html" class="list-text">首页</a>
 					<a href="Brand.html" class="list-text">品牌简介</a>
 					<a href="picture.html" class="list-text">潮流客片</a>
@@ -33,6 +34,18 @@
 		</div>
 	</nav>
 	<!-- 顶部结束 -->
+
+	<!--下拉列表开始-->
+	<div class="nav-list">
+		<ul>
+			<a href="home%20page.html"><li>首页</li></a>
+			<a href="Brand.html"><li>品牌简介</li></a>
+			<a href="picture.html"><li>潮流客片</li></a>
+			<a href="customer.html"><li>粉丝好评</li></a>
+			<a href="login.html"><li>会员登录</li></a>
+		</ul>
+	</div>
+	<!--下拉列表结束-->
 
 	<!-- banner开始 -->
 	<div class="banner">
@@ -661,6 +674,16 @@
             // scrollbar: {
             //     el: '.swiper-scrollbar',
             // },
+        })
+	</script>
+	<script>
+		$(function () {
+			$(".icon-systemmenu").click(function(){
+			    $(".nav-list").slideToggle("slow");
+                // document.body.style.overflow="hidden";
+                $(document.body).toggleClass("ying");
+			})
+
         })
 	</script>
 </body>
